@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="69dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="700px"
+            android:src="@drawable/ungdung"
+            >
+        </ImageView>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="800px"
+        android:text="Quản lí chi tiêu"
+        android:textAlignment="center"
+        android:textColor="#3366CC"
+        android:textSize="100px" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tài khoản"
+        android:id="@+id/eddangnhap"
+        android:layout_marginTop="50px">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu"
+        android:id="@+id/edmatkhau"
+        android:layout_marginTop="50px"
+        android:inputType="textPassword">
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:layout_marginTop="50px"
+            android:id="@+id/btndangnhap"
+            android:onClick="LoginDN">
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng kí"
+            android:layout_marginTop="50px"
+            android:id="@+id/btndangki"
+            android:onClick="LoginDK">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
